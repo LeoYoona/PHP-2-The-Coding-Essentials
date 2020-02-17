@@ -57,7 +57,7 @@ if(!isset($_SESSION['email']))
     
     <div class="row mb-2">
         <div class="col-md-6 mb-1"> <!--md stads for middle device length, bootstrap stuff-->
-        <input type="text" value="Black Swan" name="firstname" autofocus placeholder="First name" class="form-control" required >
+        <input type="text" name="firstname" autofocus placeholder="First name" class="form-control" required >
         </div>
         <div class="col-md-6 mb-1"> <!--md stads for middle device length, bootstrap stuff-->
         <input type="text" name="lastname" placeholder="Last name" class="form-control" required >

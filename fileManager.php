@@ -74,11 +74,15 @@ if(!isset($_SESSION['email']))
         ?>
         <tr>
           <td><?php
-                echo $filename
+                echo $filename;
+                if(!is_dir($filename))
+                {
                 ?>
+                  <img style="width: 4vw; height: 4vw;" src="workdir/<?php echo $filename?> " style="width:100px; Height:100px"> <?php } ?>
           </td>
           <td><?php
-                echo is_dir($filename)
+                
+               echo is_dir($filename)
                   ? 'directory</td><td></td>'
                   : 'regular file</td><td><button class="btn btn-link" onclick="deleteFile(this.id)" id="'
                     . $filename
@@ -91,7 +95,6 @@ if(!isset($_SESSION['email']))
       ?>
     </tbody>
   </table>
-
   <form name="upload" method="post" action="upload.php" enctype="multipart/form-data" >
     <div class="form-row">
       <div class="col">
