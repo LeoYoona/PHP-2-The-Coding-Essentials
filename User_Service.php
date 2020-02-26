@@ -22,6 +22,11 @@ class User_Service {
     {
 		return $UserdataArray = $this->UserDALobject->getAllUsers();
 	}
+
+	public function getTableData($tableName)  //get table data based on table name
+    {
+		return $this->UserDALobject->getTableData($tableName); 
+	}
 	
 	public function showAllUsers()
     { 

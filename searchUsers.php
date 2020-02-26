@@ -69,16 +69,14 @@ if(!isset($_SESSION['email']))
                 </form> 
                 <br><br><Br>
                 <a href="exportData.php" style= "color:#ccc">Export the Users List to csv/Exel file</a>          
+                <br><br><Br>
+                <a href="importData.php" style= "color:#ccc">Import data in the Databse via csv/Exel file</a>          
                 <?php
                 if(isset($_GET["result"]))
                 {
                     if($_GET["result"]=="noResult")
                     {
                         echo '<p  style="color:red;"><br>No results matching your search </p> ';
-
-                    }
-                    else
-                    {
 
                     }
                 }

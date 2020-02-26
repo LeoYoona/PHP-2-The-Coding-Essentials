@@ -248,6 +248,31 @@ class UserDAL
         }
     }
 
+    public function getTableData($tableName)  //get table data based on table name
+    { 
+        try 
+        {
+            $conn=$this->DBobject->ReturnConnectionObject();
+            $sql= "SELECT * FROM `".$tableName."` ORDER BY id DESC;";
+            $result = mysqli_query($conn, $sql);
+            return $result;
+    
+            // $numRows = $result->num_rows; 
+            //     if ($numRows > 0) 
+            //     {
+            //         while ($row = $result->fetch_array()) 
+            //         { 
+            //             $data[] = $row; 
+            //         } 
+            //         return $data;
+            //     } 
+
+        } 
+        catch (Exception $e) 
+        {
+            echo 'Caught exception: ',  $e->getMessage(), "\n";
+        }
+    }
 
 //-------------------------------------------------------------------------------END--------------------------------------------------------------
    
