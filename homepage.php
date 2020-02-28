@@ -32,11 +32,12 @@ if($_POST["remember_me"]=='1' || $_POST["remember_me"]=='on')  //storing email a
  <head>          
 	<meta charset="utf-8"/>
 	<link rel="stylesheet" type="text/css" href="myStylesheet.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<title>
 		Home || The Coding Essentials
         </title> 
        
-	<body> 
+	<body style="color: white; background-color:transparent;"> 
     <script defer src="../js/fbAPI.js"></script>
          <form class="logoutLblPos" align="right" name="form1" method="post" action="logout.php">                         <!-- logout btn-->
         <button type="submit" name="post" value="Post" class="logoutbtn" style="height: 30px; width:62px" class="logoutLblPos" align="right">
@@ -73,14 +74,20 @@ if($_POST["remember_me"]=='1' || $_POST["remember_me"]=='on')  //storing email a
                 }
             }
         ?>
+        <div class="row">
+            <p class="col mb-1" style="text-align: center; font-size: 25px;">
+            The Coding Essentials is an E-book platform for exclusive and extremely helpful programming books.        
+            In our E-books section you will find an overview of all the ebooks we offer. 
+            You can download and read it on your ereader, tablet, smartphone or PC.<br><br>
+            <a href="canvas.php" style="color:#90ee90; ">Head to creative zone :) </a>
+            </p>
 
-        <p style="text-align: center; font-size: 25px;">
-        The Coding Essentials is an E-book platform for exclusive and extremely helpful programming books.        
-        In our E-books section you will find an overview of all the ebooks we offer. 
-        You can download and read it on your ereader, tablet, smartphone or PC.<br><br>
-        <a href="canvas.php" style="color:#90ee90; ">Head to creative zone :) </a>
-        </p>
-        
+            <div class="col mb-1" style="text-align: center">
+                <a class="twitter-timeline" data-width="400" data-height="700" data-theme="dark" href="https://twitter.com/BTS_twt?ref_src=twsrc%5Etfw">Tweets by BTS_twt</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <br><br>
+                <a href="https://twitter.com/BTS_twt?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @BTS_twt</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </div>
     <!-- Creative contains all image uploading imgs, canvas , and pdf stuff-->
     </body> 
  </html> 

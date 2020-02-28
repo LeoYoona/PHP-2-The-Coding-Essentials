@@ -54,7 +54,7 @@ if(!isset($_SESSION['email']))
     <form style="text-align: center; margin: auto; width: 50%;" class="form-inline" method="post" action="pay.php">
     <div class="row">
       <div class="col">
-        <input type="text" class="form-control" id="amount" name="amount" placeholder="Amount €" pattern="^\d+\.\d{2}$" required>
+        <input type="text" class="form-control" id="amount" name="amount" placeholder="Amount € 0.00" pattern="^\d+\.\d{2}$" required>
       </div>
       <div class=" col">
         <input type="text" class="form-control" placeholder="Description" id="description" name="description" required>
@@ -62,8 +62,6 @@ if(!isset($_SESSION['email']))
       <div class="col">
         <button type="submit" class="btn btn-secondary">Make payment</button>
       </div>
-
-
     </div>
   </form>
 </body>
