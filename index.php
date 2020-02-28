@@ -104,10 +104,10 @@ session_start();
                             <!-- <a href="index.pwdreset.php" class="btn btn-link">
                                 Forgot Your Password?
                             </a>
-                            <br><br>
+                            <br><br> -->
                             <a href="index.signup.php" class="btn btn-link">
                                 Not a user? Sign Up now !!
-                            </a> -->
+                            </a>
 
                             <?php
                                 if(isset($_GET["newpwd"]))

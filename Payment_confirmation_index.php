@@ -52,7 +52,7 @@ if(!isset($_SESSION['email']))
     <p style="text-align: center"> This is just a mollie payment demonstration<br>Thank you for shopping with us. Have a nice day! </p>
 
 
- <table style="text-align: center; margin: auto; width: 50%;" class="table table-hover">
+ <table style="border-style: solid; text-align: center; margin: auto; width: 50%;" class="table table-striped">
     <thead class="thead-dark">
       <tr>
         <th scope="col">id</th>
@@ -69,13 +69,13 @@ if(!isset($_SESSION['email']))
     $conn=$DBobject->ReturnConnectionObject();
     $result = $conn->query($query);
 
-    CloseCon($conn);
+    // CloseCon($conn);
     if ($result->num_rows > 0) {
 
         while($row = mysqli_fetch_assoc($result)) {
 
          ?>
-            <tr>
+            <tr style="color:white">
                 <td>
                 <?php echo $row['id']; ?>
                 </td>

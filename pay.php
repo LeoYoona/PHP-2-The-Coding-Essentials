@@ -24,6 +24,7 @@ $payment = $mollie->payments->create([
     "currency" => "EUR",
     "value" => "$amount"
   ],
+//   "testmode" => true,
   "description" => "$description",
   "redirectUrl" => "http://636130.infhaarlem.nl/Payment_confirmation_index.php", 
   "webhookUrl"  => "http://636130.infhaarlem.nl/confirm.php",
@@ -31,5 +32,8 @@ $payment = $mollie->payments->create([
 
 
 header("Location: " . $payment->getCheckoutUrl(), true, 303);
+
+
+// https://github.com/mollie/mollie-api-php/issues/191 refer
 
 ?>

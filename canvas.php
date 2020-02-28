@@ -44,14 +44,25 @@ if(!isset($_SESSION['email']))
             </ul>
         </nav>
         <br>
-    <h2 style="text-align: center"> Canvas</h2>
-    <div style="text-align:center; margin: auto; width: 50%;">
-        <canvas id="canvas" style="border: 1.5vw solid #ccc; background-color:#FFF;"></canvas>
-        <script src="../js/canvasJS.js"></script>
-        <div id="buttons">
-            <a  class="btn btn-outline-primary" id="download" download="image.jpg" href="" onclick="download_img(this);" >Download </a>
-            <button type="submit" class="btn btn-outline-secondary" onClick="reset()" style="background-color:#1e1e1e;">Reset</button>
-        <small><p>Signature Pad by <a style="color:#fff;"href="https://github.com/szimek/signature_pad">szimek</a></p></small>
+    
+    <div class="row">
+        <div class="col mb-1" >
+            <h2 style="text-align: center"> Canvas</h2>
+            <div style="text-align:center; margin: auto">
+                <canvas id="canvas" style="border: 1.5vw solid #ccc; background-color:#FFF;"></canvas>
+                <script src="../js/canvasJS.js"></script>
+                <div id="buttons">
+                    <a  class="btn btn-outline-primary" id="download" download="image.jpg" href="" onclick="download_img(this);" >Download </a>
+                    <button type="submit" class="btn btn-outline-secondary" onClick="reset()" style="background-color:#1e1e1e;">Reset</button>
+                <small><p>Signature Pad by <a style="color:#fff;"href="https://github.com/szimek/signature_pad">szimek</a></p></small>
+            </div></div>
+        </div>
+
+        <div class="col mb-1" style="text-align: center; z-index: -1;">
+                <a class="twitter-timeline" data-width="400" data-height="700" data-theme="dark" href="https://twitter.com/BTS_twt?ref_src=twsrc%5Etfw">Tweets by BTS_twt</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <br><br>
+                <a href="https://twitter.com/BTS_twt?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @BTS_twt</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
     </div>
     </body>
 </html>
