@@ -45,7 +45,7 @@ if(!isset($_SESSION['email']))
         </nav>
         <br>
     
-    <div class="row">
+        <div class="row">
         <div class="col mb-1" >
             <h2 style="text-align: center"> Canvas</h2>
             <div style="text-align:center; margin: auto">
@@ -59,10 +59,12 @@ if(!isset($_SESSION['email']))
         </div>
 
         <div class="col mb-1" style="text-align: center; z-index: -1;">
-                <a class="twitter-timeline" data-width="400" data-height="700" data-theme="dark" href="https://twitter.com/BTS_twt?ref_src=twsrc%5Etfw">Tweets by BTS_twt</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                <br><br>
-                <a href="https://twitter.com/BTS_twt?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @BTS_twt</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <a href="https://twitter.com/BTS_twt?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @BTS_twt</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <br>
+            <a class="twitter-timeline" data-width="400" data-height="700" data-theme="dark" href="https://twitter.com/BTS_twt?ref_src=twsrc%5Etfw">Tweets by BTS_twt</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            
         </div>
     </div>
     </body>
 </html>
+<!-- w 300 h 800 -->
