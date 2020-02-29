@@ -26,7 +26,7 @@ if(!isset($_SESSION['email']))
     </head>
     <body style="color: white; background-color:transparent;">
 
-    <form class="logoutLblPos" align="right" name="form1" method="post" action="homepage.php"> 
+    <form style="z-index: 2;" class="logoutLblPos" align="right" name="form1" method="post" action="homepage.php"> 
     <button type="submit" name="post" value="Post" class="logoutbtn" style="padding:0.4vw; border-radius:10px" class="logoutLblPos" align="right">
       <b> Back to Homepage </b>
       </button>
@@ -58,7 +58,7 @@ if(!isset($_SESSION['email']))
             </div></div>
         </div>
 
-        <div class="col mb-1" style="text-align: center; z-index: -1;">
+        <div class="col mb-1" style="text-align: center; ">
             <a href="https://twitter.com/BTS_twt?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @BTS_twt</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             <br>
             <a class="twitter-timeline" data-width="400" data-height="700" data-theme="dark" href="https://twitter.com/BTS_twt?ref_src=twsrc%5Etfw">Tweets by BTS_twt</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
