@@ -28,7 +28,7 @@ class DB
 		$this->servername = "localhost";
 		$this->username = " "; 
 		$this->password = " ";
-        $this->dbase = "s636130_db"; 
+        $this->dbase = " "; 
         
         $this->_mysqliConnectionObject = new mysqli($this->servername, $this->username, $this->password,$this->dbase);
         
