@@ -26,8 +26,8 @@ class DB
     private function __construct()
 	{
 		$this->servername = "localhost";
-		$this->username = "s636130_user"; 
-		$this->password = "BT21Yoona";
+		$this->username = " "; 
+		$this->password = " ";
         $this->dbase = "s636130_db"; 
         
         $this->_mysqliConnectionObject = new mysqli($this->servername, $this->username, $this->password,$this->dbase);
